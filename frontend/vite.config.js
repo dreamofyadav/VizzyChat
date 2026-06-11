@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     port: 3002,
     proxy: {
-      '/api': {
+      '/VITE_API_URL': {
         // target: 'http://localhost:3003',
         target:'https://backend-gt0h.onrender.com',
         changeOrigin: true,
