@@ -1,0 +1,94 @@
+/* src/components/Welcome/WelcomeScreen.module.css */
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  text-align: center;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.orb {
+  width: 68px; height: 68px;
+  border-radius: 18px;
+  background: var(--gold-dim);
+  border: 0.5px solid var(--gold-border);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 28px;
+  color: var(--gold);
+  position: relative;
+}
+.orb::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 26px;
+  border: 0.5px solid var(--gold-border);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--text);
+  font-style: italic;
+  line-height: 1.25;
+  max-width: 400px;
+}
+
+.sub {
+  font-size: 13.5px;
+  color: var(--text-3);
+  font-weight: 300;
+  line-height: 1.65;
+  max-width: 360px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.card {
+  padding: 13px 15px;
+  background: var(--bg-2);
+  border: 0.5px solid var(--border-md);
+  border-radius: var(--radius-lg);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.card:hover { background: var(--bg-3); border-color: var(--border-hi); }
+
+.tag {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+}
+
+.text {
+  font-size: 12.5px;
+  color: var(--text-2);
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,34 @@
+/* src/styles/tokens.css */
+:root {
+  --bg:           #080807;
+  --bg-1:         #0f0f0d;
+  --bg-2:         #161613;
+  --bg-3:         #1e1d1a;
+  --bg-4:         #272521;
+  --border:       rgba(255,255,255,0.07);
+  --border-md:    rgba(255,255,255,0.12);
+  --border-hi:    rgba(255,255,255,0.18);
+  --text:         #f2ede6;
+  --text-2:       #b8b3aa;
+  --text-3:       #7a756d;
+  --text-4:       #4a4640;
+  --gold:         #c9a96e;
+  --gold-2:       #e8c98a;
+  --gold-dim:     rgba(201,169,110,0.10);
+  --gold-dim2:    rgba(201,169,110,0.18);
+  --gold-border:  rgba(201,169,110,0.28);
+  --green:        #4a9e6b;
+  --green-dim:    rgba(74,158,107,0.08);
+  --green-border: rgba(74,158,107,0.25);
+  --red:          #c0533a;
+
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-ui:      'Syne', system-ui, sans-serif;
+
+  --sidebar-w:    260px;
+  --header-h:     56px;
+  --radius-sm:    6px;
+  --radius:       10px;
+  --radius-lg:    14px;
+  --radius-xl:    20px;
+}

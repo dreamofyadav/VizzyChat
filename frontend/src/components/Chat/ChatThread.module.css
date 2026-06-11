@@ -1,0 +1,14 @@
+/* src/components/Chat/ChatThread.module.css */
+.thread {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 0 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-4) transparent;
+}

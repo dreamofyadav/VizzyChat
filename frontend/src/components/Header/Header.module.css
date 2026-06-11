@@ -1,0 +1,61 @@
+/* src/components/Header/Header.module.css */
+.header {
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 0.5px solid var(--border);
+  background: var(--bg-1);
+  flex-shrink: 0;
+  gap: 12px;
+}
+.left, .right { display: flex; align-items: center; gap: 8px; }
+
+.iconBtn {
+  width: 32px; height: 32px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 0.5px solid var(--border-md);
+  color: var(--text-3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  transition: all 0.15s;
+}
+.iconBtn:hover { background: var(--bg-3); color: var(--text); border-color: var(--border-hi); }
+
+.title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--text-2);
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modeBadge {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 0.5px solid var(--border-md);
+  color: var(--text-3);
+}
+.modeBadge.home   { border-color: var(--gold-border); color: var(--gold); background: var(--gold-dim); }
+.modeBadge.business { border-color: var(--green-border); color: #5bbf82; background: var(--green-dim); }
+
+.avatar {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--bg-4);
+  border: 0.5px solid var(--border-hi);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-2);
+  cursor: pointer;
+}
