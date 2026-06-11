@@ -1,7 +1,7 @@
 // src/services/api.js
 // All API calls to the Vizzy backend (Node.js + MongoDB + Gemini)
 
-const BASE = import.meta.env.VITE_API_URL || '/api';
+const BASE = import.meta.env.VITE_API_URL;
 
 // ── Helper ─────────────────────────────────────────────────────
 async function request(path, options = {}) {
