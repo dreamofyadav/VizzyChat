@@ -239,3 +239,6 @@ app.listen(PORT, () => {
   console.log(`    🔁 Fallback           →  Pollinations.ai (always on, no key)`);
   console.log(`    🗄️  Database           →  MongoDB\n`);
 });
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
